@@ -7,7 +7,7 @@ from email.mime.multipart import MIMEMultipart
 
 mail_content = "HI! This is a mail to kindly request you to stop spamming me. \
                 You are gonna recceive several of such requests from me as a good note. \
-                Now you know how irritating it is receive 100's of email daiyly from people \
+                Now you know how irritating it is to receive 100's of email daiyly from people \
                 like you who buy our mails information from other companies and send us such spams. \
                 This is very kind request to you. Please stop all spams you have been sending people \
                 like me. For your information, I know you are going to ask me why didn't I unsubscribe \
