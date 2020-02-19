@@ -1,9 +1,9 @@
-import smtplib
-import random
 import time
+import random
+import smtplib
 import pandas as pd
-from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
 
 mail_content = "HI! This is a mail to kindly request you to stop spamming me. \
                 You are gonna recceive several of such requests from me as a good note. \
@@ -16,19 +16,19 @@ mail_content = "HI! This is a mail to kindly request you to stop spamming me. \
                 Be ready for getting spammed now. Thank you so much for your patience."
 
 subjects = list(pd.read_csv("QUOTE.csv")['quote'])
+receivers = ['newsletter@detachmail.in', 'newsletter@donamails.in']    # I don't encourage you to use these Email IDS 
 
 #The mail addresses and password
-sender_address = 'dailyproblems123@gmail.com'
-sender_pass = 'Muks@2512'
-receiver_address = 'newsletter@donamails.in'
+sender_address = 'xxxx'        # your Email address here
+sender_pass = 'xxxx'      # password for your Email ID
+receiver_address = 'xxxx'      # receivers Email ID
 
 #Setup the MIME
-
 mail_count = 0
 while(1):
     message = MIMEMultipart()
     message['From'] = sender_address
-    message['To'] = receiver_address
+    message['To'] = random.choice()
     message['Subject'] = random.choice(subjects)
     
     #The body and the attachments for the mail
