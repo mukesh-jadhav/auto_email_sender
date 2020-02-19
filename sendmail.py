@@ -12,8 +12,7 @@ mail_content = "HI! This is a mail to kindly request you to stop spamming me. \
                 This is very kind request to you. Please stop all spams you have been sending people \
                 like me. For your information, I know you are going to ask me why didn't I unsubscribe \
                 from your service? I clicked on unscubscribe as told but that page is not available. \
-                I have been trying since a month now. You just mailed wrong person who is a coder. \
-                Be ready for getting spammed now. Thank you so much for your patience."
+                I have been trying since a month now. Thank you so much for your patience."
 
 subjects = list(pd.read_csv("QUOTE.csv")['quote'])
 receivers = ['newsletter@detachmail.in', 'newsletter@donamails.in']    # I don't encourage you to use these Email IDS 
