@@ -27,7 +27,7 @@ mail_count = 0
 while(1):
     message = MIMEMultipart()
     message['From'] = sender_address
-    message['To'] = random.choice()
+    message['To'] = random.choice(receivers)
     message['Subject'] = random.choice(subjects)
     
     #The body and the attachments for the mail
